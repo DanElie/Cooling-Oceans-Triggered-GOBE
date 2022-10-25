@@ -42,7 +42,7 @@ for i=1:nb
 end
 
 %% save
-exportgraphics(gcf,'Temperature_Song.png','Resolution',300)
+exportgraphics(gcf,'Temperature_Song.tif','Resolution',300)
 %exportgraphics(gcf,'Temperature_Song.eps', 'eps') # enable renderer >
 %painters if exporting in vectorial format
 
