@@ -395,4 +395,4 @@ else
 end
 
 %% save
-saveas(gcf,'Regicurves_Song.pdf');
+exportgraphics(gcf,'Regicurves_Song.tif','Resolution',300)
