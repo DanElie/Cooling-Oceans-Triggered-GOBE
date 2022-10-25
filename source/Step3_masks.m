@@ -12,7 +12,7 @@ end
 
 %then we get masks of the continental shelves
 for i = 1:nb
-    clear mask; mask = Song(i).regrid(:,:,17,1);
+    clear mask; mask = Song(i).regrid(:,:,16,1);
     clear f; f = find(isnan(mask) == 1);
     clear mask2; mask2 = mask;
     mask2(f) = 1;
