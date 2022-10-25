@@ -44,4 +44,4 @@ for i=1:nb
 end
 
 %% save
-exportgraphics(gcf,'GlobalMaps_Song.png','Resolution',450)
+exportgraphics(gcf,'GlobalMaps_Song.tif','Resolution',300)
