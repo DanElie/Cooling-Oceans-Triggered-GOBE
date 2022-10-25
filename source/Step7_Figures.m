@@ -135,5 +135,4 @@ end
 % ylim([0 1.1])
 
 %% save figure
-
-saveas(gcf,'GlobalCurve_Song.pdf')
+exportgraphics(gcf,'GlobalCurve_Song.tif','Resolution',300)
