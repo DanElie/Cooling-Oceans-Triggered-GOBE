@@ -22,11 +22,11 @@ for i=1:nb
     ax = nexttile;
     
     ag1 = worldmap('world');
-    pcolorm(latdef, [longdef longdef(1)], [c c(:,1)]);
-    b1 = contourm(latdef,[longdef longdef(:,1)],[bb bb(:,1)], 'k');
-
-    d1 = contourm(latdef, [longdef longdef(:,1)], [dd dd(:,1)], 'k');
-    pcolorm(latdef, [longdef longdef(1)], [Conti Conti(:,1)]);
+    pcolorm(latdef, [longdef longdef(1)], [c c(:,1)])
+    pcolorm(latdef, [longdef longdef(1)], [Conti Conti(:,1)])
+    b1 = contourm(latdef,[longdef longdef(:,1)],[bb, bb(:,1)], 'k');
+    d1 = contourm(latdef, longdef, dd, 'k');
+    
     setm(ag1, 'meridianlabel', 'off', 'parallellabel', 'off', 'plabellocation', 45);
     setm(ag1,'glinestyle','-','glinewidth',0.75,'gcolor',[0.75 0.75 0.75],'FontName','Arial','FontSize',12);
     set(gcf,'Color',[1,1,1]);
