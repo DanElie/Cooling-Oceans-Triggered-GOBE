@@ -86,6 +86,8 @@ Step7_Figures
 %% The Geographic maps
 if mapping_toolbox == 'y';
     Step8_Maps
+else 
+    Step8b_SimpleMaps
 end
 
 %% The Latitudinal gradient
