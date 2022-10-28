@@ -34,13 +34,13 @@ if scenario_Song == 'y'
     Song(6).ncdf = ncread('440tc_1318.62W_EccN_ocean_1736ppm_light.nc', 'TEMP');
     Song(7).ncdf = ncread('430tc_1319.7W_EccN_ocean_1120ppm_light.nc', 'TEMP');
 else
-        Song(1).ncdf = ncread('490tc_1313.24W_EccN_ocean_6720ppm.nc', 'TEMP');
-        Song(2).ncdf = ncread('480tc_1314.31W_EccN_ocean_26880ppm.nc', 'TEMP');
-        Song(3).ncdf = ncread('470tc_1315.38W_EccN_ocean_6720ppm.nc', 'TEMP');
-        Song(4).ncdf = ncread('460tc_1316.46W_EccN_ocean_3360ppm.nc', 'TEMP');
-        Song(5).ncdf = ncread('450tc_1317.54W_EccN_ocean_2240ppm.nc', 'TEMP');
-        Song(6).ncdf = ncread('440tc_1318.62W_EccN_ocean_1820ppm.nc', 'TEMP');
-        Song(7).ncdf = ncread('430tc_1319.7W_EccN_ocean_1120ppm.nc', 'TEMP');
+        Song(1).ncdf = ncread('490tc_1313.24W_EccN_ocean_6720ppm_light.nc', 'TEMP');
+        Song(2).ncdf = ncread('480tc_1314.31W_EccN_ocean_26880ppm_light.nc', 'TEMP');
+        Song(3).ncdf = ncread('470tc_1315.38W_EccN_ocean_6720ppm_light.nc', 'TEMP');
+        Song(4).ncdf = ncread('460tc_1316.46W_EccN_ocean_3360ppm_light.nc', 'TEMP');
+        Song(5).ncdf = ncread('450tc_1317.54W_EccN_ocean_2240ppm_light.nc', 'TEMP');
+        Song(6).ncdf = ncread('440tc_1318.62W_EccN_ocean_1820ppm_light.nc', 'TEMP');
+        Song(7).ncdf = ncread('430tc_1319.7W_EccN_ocean_1120ppm_light.nc', 'TEMP');
 end
 
 clear i
