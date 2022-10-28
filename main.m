@@ -5,6 +5,9 @@ close all
 clc
 
 addpath(genpath(erase(matlab.desktop.editor.getActiveFilename,'main.m')))
+addpath('source')
+addpath('data')
+addpath('data/ncdf')
 
 %% %%%%%% My inputs %%%%%%%%%%%%%
 
