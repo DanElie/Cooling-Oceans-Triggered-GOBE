@@ -34,7 +34,7 @@ end
 
 figure;
 hold on;
-contourf([Song.geotimes], latdef, LBG);
+contourf([Song.geotimes], latdef, LBG,[0 100:500:6500]);
 caxis([0 7000]);
 colormap('jet');
 h = colorbar;
