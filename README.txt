@@ -1,6 +1,10 @@
+# Code for "Cooling Oceans Did Trigger Ordovician Biodiversification" (Ontiveros et al., in revision)
+
+## Requirements
+
 The code needs at least MATLAB 2020 a. to be active. The Mapping Toolbox is needed to produce the maps. 
 
-The main code is found on "main.mat, and is able to produce four main figures : 
+The main code is found on "main.mat, and produces the four main figures : 
 - the biodiversity curve
 - the biodiversity maps
 - the Latitudinal Gradient
