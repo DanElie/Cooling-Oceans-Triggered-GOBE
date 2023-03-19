@@ -1,4 +1,4 @@
-# Code for "Cooling Oceans Did Trigger Ordovician Biodiversification" (Ontiveros et al., in revision)
+# Cooling Oceans Did Trigger Ordovician Biodiversification (Ontiveros et al., in revision)
 
 ## Requirements
 
