@@ -7,7 +7,7 @@ Cooling Oceans Did Trigger Ordovician Biodiversification.
 
 ## Requirements
 
-The code needs at least MATLAB 2020 a. to be active. The Mapping Toolbox is needed to produce the maps. 
+The code needs at least MATLAB 2020 a. to be active. The Mapping Toolbox is needed to produce the maps currently presented in the manuscript, although it is still possible to produce some maps with the base functions.
 
 ## Introduction
 
