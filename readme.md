@@ -16,6 +16,9 @@ We couple an ocean-atmosphere general circulation model with a macroecological m
 An in depth explanation of the paleoclimatic model is available here:
 https://paleoclim-cnrs.github.io/documentation-model/FOAM/
 
+In order to save memory, we only uploaded "light" ncdf, available on data/ncdf, files that contain the simulated temperatures. The complete ncdf are available upon request. 
+
+## Main
 
 The main code is found on "main.mat, and produces the four main figures : 
 - the biodiversity curve
@@ -24,7 +27,7 @@ The main code is found on "main.mat, and produces the four main figures :
 - the Regional Curves
 
 It is possible to chose some of the inputs, such as the paleoclimatic scenario used (Song or Goldberg),
-to account the seasonality, to display the results of a detrended paleoclimatic scenario (at 12 PAL).
+to account seasonality, and to display the results of a detrended paleoclimatic scenario (at 12 PAL).
 
 The code also compares our simulated diversity to fossil brachiopods in the paleocontinents of Laurentia, Baltica,
 Sibera and South China.
