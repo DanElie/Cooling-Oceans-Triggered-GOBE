@@ -1,4 +1,4 @@
- %% Source Code for the paper_____
+%% Source Code for the paper_____
 
 clear all
 close all
@@ -11,13 +11,13 @@ addpath('data/ncdf')
 
 %% %%%%%% My inputs %%%%%%%%%%%%%
 
-nbsimul = 1;%to reproduce the results it needs to be set at 100
+nbsimul = 100;%to reproduce the results it needs to be set at 100
 do_seasonality = 'n' % 'y' or 'n'
-scenario_Song = 'y' % 'y' is Song and 'n' is Goldberg
-detrended_Climate = 'y' %'y' adds the detrended climate (at 12PAL constant)
+scenario_Song = 'Gros' % 'Song' is Song, 'Gold' is Goldberg, 'Gros' is Grossman and Joachimski
+detrended_Climate = 'n' %'y' adds the detrended climate (at 12PAL constant)
 fossils = 'bra' %Fossil group can be 'tri', 'bra', 'con' or 'mar';
 
-mapping_toolbox = 'n' %do you have the Matlab Mapping Toolbox, 'y' or not (makes the maps)
+mapping_toolbox = 'y' %do you have the Matlab Mapping Toolbox, 'y' or not (makes the maps)
 
 %% Cleaning working directory
 delete GlobalCurve_Song.pdf Gradient_Song.pdf Regicurves_Song.pdf GlobalMaps_Song.png Temperature_Song.png Output_Song.mat Output_Cst8PAL.mat
