@@ -40,10 +40,12 @@ The first 4 steps of the code will format the .ncdf files in order to get exploi
 There are three different temperature scenarios available. You can specify the one you prefer in "My inputs", that you see in the "main.m" script.
 For this, you just need to change the Scena_Song parameter.
 
-
 The 5th step creates the niches (rectangular niches).
 
 The 6th step is the model, and the pseudospecies settle where their thermal tolerance allows them to settle.
-The steps afterwards produce the figures.
+The steps afterwards produce the figures, such as the Biodiversity Maps:
+
+![GlobalCurve_Song](https://github.com/DanElie/Cooling-Oceans-Triggered-GOBE/assets/114865367/762b6f41-b578-490d-96a4-3dbbc2a78d3b)
+It is the map produced with the Song paleoclimatic scenario
 
 Finally, the 10th step produces the regional biodiversity curves, from Baltica, Laurentia, Siberia and South China.
