@@ -32,7 +32,7 @@ It is possible to chose some of the inputs, such as the paleoclimatic scenario u
 to account seasonality, and to display the results of a detrended paleoclimatic scenario (at 12 PAL).
 
 The code also compares our simulated diversity to fossil brachiopods in the paleocontinents of Laurentia, Baltica,
-Sibera and South China.
+Siberia and South China.
 
 ### The code
 
@@ -43,4 +43,7 @@ For this, you just need to change the Scena_Song parameter.
 
 The 5th step creates the niches (rectangular niches).
 
+The 6th step is the model, and the pseudospecies settle where their thermal tolerance allows them to settle.
+The steps afterwards produce the figures.
 
+Finally, the 10th step produces the regional biodiversity curves, from Baltica, Laurentia, Siberia and South China.
