@@ -9,7 +9,7 @@ Cooling Oceans Did Trigger Ordovician Biodiversification.
 
 The code needs at least MATLAB 2020 a. to be active. The Mapping Toolbox is needed to produce the maps currently presented in the manuscript, although it is still possible to produce some maps with the base functions.
 
-It takes between 30 minutes and an hour to complete the code with a normal computer, for 100 niche generations.
+It takes between 30 minutes and an hour to complete the code with a normal computer, for 100 niche generated.
 
 ## Introduction
 
