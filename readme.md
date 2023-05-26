@@ -37,6 +37,9 @@ Sibera and South China.
 ### The code
 
 The first 4 steps of the code will format the .ncdf files in order to get exploitable matrices.
+There are three different temperature scenarios available. You can specify the one you prefer in "My inputs", that you see in the "main.m" script.
+For this, you just need to change the Scena_Song parameter.
+
 
 The 5th step creates the niches (rectangular niches).
 
