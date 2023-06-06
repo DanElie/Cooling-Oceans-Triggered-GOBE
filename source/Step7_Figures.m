@@ -25,6 +25,9 @@ bleu = [0 0 1];
 gris = [0.6 0.6 0.6];
 gris2 = [0.3 0.3 0.35];
 jaune = [0.9290 0.6940 0.1250];
+rouge = [0.8 0.04 0.04];
+orange = [0.8500 0.3250 0.0980];
+vert = [0.4660 0.6740 0.1880];
 
 %% Create the enveloppe
 
@@ -42,7 +45,7 @@ if detrended_Climate == 'n'
     figure('Units', 'centimeters', 'Position', [1,1,15,12], 'PaperType', 'a4');
     colororder({'k','k'})
     yyaxis left
-    p1=plot_shade([xi]', [Song.mini]', [Song.mediane]', [Song.maxi]', 0.4, gris, 2);
+    p1=plot_shade([xi]', [Song.mini]', [Song.mediane]', [Song.maxi]', 0.4, bleu, 2);
     p1.Marker =".";
     p1.MarkerSize = 40;
     xlabel('Geological time (Ma)');
@@ -72,7 +75,7 @@ else
     colororder({'k','k'})
     yyaxis left
     hold on
-    p1=plot_shade([xi]', [Song.mini]', [Song.mediane]', [Song.maxi]', 0.4, gris, 2);
+    p1=plot_shade([xi]', [Song.mini]', [Song.mediane]', [Song.maxi]', 0.4, bleu, 2);
     p1.Marker =".";
     p1.MarkerSize = 40;
     p2=plot_shade([xi]', [Cst8PAL.mini]', [Cst8PAL.mediane]', [Cst8PAL.maxi]', 0.4, gris2, 2);
