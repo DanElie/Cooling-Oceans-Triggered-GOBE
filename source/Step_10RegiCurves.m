@@ -249,7 +249,7 @@ if detrended_Climate == 'n';
     nexttile;
     colororder({'k','k'})
     yyaxis left
-    p1 = plot_shade([xi]', [Laurentia.mini]', [Laurentia.mediane]', [Laurentia.maxi]', 0.4, gris, 2);
+    p1 = plot_shade([xi]', [Laurentia.mini]', [Laurentia.mediane]', [Laurentia.maxi]', 0.4, orange, 2);
     p1.Marker = '.';
     p1.MarkerSize = 20;
     xlabel('geological times');
@@ -264,7 +264,7 @@ if detrended_Climate == 'n';
     nexttile;
     colororder({'k','k'})
     yyaxis left
-    p1 =plot_shade([xi]', [Siberia.mini]', [Siberia.mediane]', [Siberia.maxi]', 0.4, gris, 2);
+    p1 =plot_shade([xi]', [Siberia.mini]', [Siberia.mediane]', [Siberia.maxi]', 0.4, jaune, 2);
     p1.Marker = '.';
     p1.MarkerSize = 20;
     xlabel('geological times')
@@ -279,7 +279,7 @@ if detrended_Climate == 'n';
     nexttile;
     colororder({'k','k'})
     yyaxis left
-    p1 = plot_shade([xi]', [SouthChina.mini]', [SouthChina.mediane]', [SouthChina.maxi]', 0.4, gris, 2);
+    p1 = plot_shade([xi]', [SouthChina.mini]', [SouthChina.mediane]', [SouthChina.maxi]', 0.4, vert, 2);
     p1.Marker = '.';
     p1.MarkerSize = 20;
     xlabel('geological times')
@@ -294,7 +294,7 @@ if detrended_Climate == 'n';
     nexttile;
     colororder({'k','k'})
     yyaxis left
-    p1 = plot_shade([x2]', [Baltica.mini]', [Baltica.mediane]', [Baltica.maxi]', 0.4, gris, 2);
+    p1 = plot_shade([x2]', [Baltica.mini]', [Baltica.mediane]', [Baltica.maxi]', 0.4, bleu, 2);
     p1.Marker = '.';
     p1.MarkerSize = 20;
     xlabel('geological times')
@@ -316,7 +316,7 @@ else
     hold on
     colororder({'k','k'})
     yyaxis left
-    p1 = plot_shade([xi]', [Laurentia.mini]', [Laurentia.mediane]', [Laurentia.maxi]', 0.4, gris, 2);
+    p1 = plot_shade([xi]', [Laurentia.mini]', [Laurentia.mediane]', [Laurentia.maxi]', 0.4, orange, 2);
     p1.Marker = '.';
     p1.MarkerSize = 20;
     p2 = plot_shade([xi]', [Laurentia.mini2]', [Laurentia.mediane2]', [Laurentia.maxi2]', 0.4, gris2, 2);
@@ -337,7 +337,7 @@ else
     hold on
     colororder({'k','k'})
     yyaxis left
-    p1 =plot_shade([xi]', [Siberia.mini]', [Siberia.mediane]', [Siberia.maxi]', 0.4, gris, 2);
+    p1 =plot_shade([xi]', [Siberia.mini]', [Siberia.mediane]', [Siberia.maxi]', 0.4, jaune, 2);
     p1.Marker = '.';
     p1.MarkerSize = 20;
     p2 =plot_shade([xi]', [Siberia.mini2]', [Siberia.mediane2]', [Siberia.maxi2]', 0.4, gris2, 2);
@@ -356,7 +356,7 @@ else
     hold on
     colororder({'k','k'})
     yyaxis left
-    p1 = plot_shade([xi]', [SouthChina.mini]', [SouthChina.mediane]', [SouthChina.maxi]', 0.4, gris, 2);
+    p1 = plot_shade([xi]', [SouthChina.mini]', [SouthChina.mediane]', [SouthChina.maxi]', 0.4, vert, 2);
     p1.Marker = '.';
     p1.MarkerSize = 20;
     p2 = plot_shade([xi]', [SouthChina.mini2]', [SouthChina.mediane2]', [SouthChina.maxi2]', 0.4, gris2, 2);
@@ -376,7 +376,7 @@ else
     hold on
     colororder({'k','k'})
     yyaxis left
-    p1 = plot_shade([x2]', [Baltica.mini]', [Baltica.mediane]', [Baltica.maxi]', 0.4, gris, 2);
+    p1 = plot_shade([x2]', [Baltica.mini]', [Baltica.mediane]', [Baltica.maxi]', 0.4, bleu, 2);
     p1.Marker = '.';
     p1.MarkerSize = 20;
     p1 = plot_shade([x2]', [Baltica.mini2]', [Baltica.mediane2]', [Baltica.maxi2]', 0.4, gris2, 2);
