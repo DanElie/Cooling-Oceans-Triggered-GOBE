@@ -1,48 +1,45 @@
-# The model
+## The model
 
-The script comes from this research article, currently in preprint:
+This Matlab code is associated with this research article, currently in revision:
 
 Daniel Eliahou Ontiveros, Gregory Beaugrand, Bertrand Lefebvre, Chloe Markussen Marcilly, Thomas Servais, Alexandre Pohl (in revision)
+
 Cooling Oceans Did Trigger Ordovician Biodiversification.
 
 ## Requirements
 
-The code needs at least MATLAB 2020 a. to be active. The Mapping Toolbox is needed to produce the maps currently presented in the manuscript, although it is still possible to produce some maps with the base functions.
+The code needs at least MATLAB 2020a to run. The ‘Mapping Toolbox’ is needed to produce the maps currently presented in the manuscript, although it is still possible to produce simpler maps with the base functions. The ‘Statistics and Machine Learning Toolbox’ is needed to produce the regional biodiversity curves.
 
-It takes between 30 minutes and an hour to complete the code with a normal computer, for 100 niche generated.
+It takes between 30 minutes and 1 hour to complete the code on a laptop, using 100 niches.
 
 ## Introduction
 
 We couple an ocean-atmosphere general circulation model with a macroecological model validated in the Modern to quantify the response of marine biodiversity to the well-documented long-term Ordovician cooling trend.
 
-An in depth explanation of the paleoclimatic model is available here:
-https://paleoclim-cnrs.github.io/documentation-model/FOAM/
-
-In order to save memory, we only uploaded "light" ncdf, available on data/ncdf, files that contain the simulated temperatures. The complete ncdf are available upon request.
-
 ## Main
 
-The main code is found on "main.mat, and produces the four main figures :
-- the biodiversity curve
-- the biodiversity maps
-- the Latitudinal Gradient
-- the Regional Curves
+The main code is found in "main.mat” and produces the four main figures:
 
-It is possible to chose some of the inputs, such as the paleoclimatic scenario used (Song or Goldberg),
-to account seasonality, and to display the results of a detrended paleoclimatic scenario (at 12 PAL).
+- the global biodiversity curve;
 
-The code also compares our simulated diversity to fossil brachiopods in the paleocontinents of Laurentia, Baltica,
-Siberia and South China.
+- the biodiversity maps;
+
+- the latitudinal gradient;
+
+- the regional curves.
+
+It is possible to choose some of the inputs, such as the paleoclimatic scenario used (after Song et al. (2019), Goldberg et al. (2021) or Grossman and Joachimski (2022)), to account for seasonality, and to display the results for a detrended paleoclimatic scenario (at 12 PAL).
+
+The code also compares our simulated diversity to fossil brachiopod diversity for the paleocontinents Laurentia, Baltica, Siberia and South China.
 
 ### The code
 
-The first 4 steps of the code will format the .ncdf files in order to get exploitable matrices.
-There are three different temperature scenarios available. You can specify the one you prefer in "My inputs", that you see in the "main.m" script.
-For this, you just need to change the Scena_Song parameter.
+The first 4 steps of the code format the NetCDF files in order to get exploitable matrices. There are three different temperature scenarios available. You can specify the one you prefer in "My inputs", that you see in the "main.m" script. For this, you just need to change the parameter “scenario_Song”.
 
-The 5th step creates the niches (rectangular niches).
+The 5th step creates the (rectangular) niches.
 
-The 6th step is the model, and the pseudospecies settle where their thermal tolerance allows them to settle.
+The 6th step is the main model, and the pseudo-species settle where their thermal tolerance allows them to settle.
+
 The steps afterwards produce the figures, such as the biodiversity curve:
 
 ![GlobalCurve_Song](https://github.com/DanElie/Cooling-Oceans-Triggered-GOBE/assets/114865367/762b6f41-b578-490d-96a4-3dbbc2a78d3b)
