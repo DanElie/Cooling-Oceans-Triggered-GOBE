@@ -4,7 +4,7 @@ This Matlab code is associated with this research article, currently in revision
 
 Daniel Eliahou Ontiveros, Gregory Beaugrand, Bertrand Lefebvre, Chloe Markussen Marcilly, Thomas Servais, Alexandre Pohl (in revision)
 
-Cooling Oceans Did Trigger Ordovician Biodiversification.
+Impact of global climate cooling on Ordovician marine biodiversity.
 
 ## Requirements
 
