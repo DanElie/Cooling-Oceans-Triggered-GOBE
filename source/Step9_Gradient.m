@@ -16,7 +16,7 @@ figure;
 hold on;
 contourf([Song.geotimes], latdef, ff);
 caxis([0 7000]);
-colormap('jet');
+colormap('parula');
 h = colorbar;
 h.Label.String = 'Pseudospecies richness';
 xlabel('Geological time');
