@@ -36,7 +36,7 @@ for i=1:nb
     ylabel('Latitude');
     ag2 = colorbar;
     set(ag2,'FontName','Arial','FontSize',12);
-    z=jet;
+    z=parula;
     z(end,:)=[0.7 0.7 0.7];
     colormap(z);
     title([num2str(time) ' Ma ' num2str(PAL) ' PAL']);
