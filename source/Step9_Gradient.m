@@ -72,4 +72,4 @@ ylabel('latitude');
 % title('Song Ordovician LDG');
 
 %% save
-exportgraphics(gcf,'Gradient_Song.tif','Resolution',300)
+exportgraphics(gcf,'Gradient_Song.pdf','Resolution',300)
