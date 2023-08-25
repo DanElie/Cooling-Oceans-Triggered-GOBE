@@ -2,15 +2,7 @@
 %We produce a latitudinal gradient
 
 ff = [Song.GL];
-
-ff(1:54, 1) = nan;
-ff(1:52, 2) = nan;
-ff(1:54, 3) = nan;
-ff(1:54, 4) = nan;
-ff(1:49, 5) = nan;
-ff(1:48, 6) = nan;
-ff(1:44, 7) = nan;
-ff(151:end,:) = nan;
+ff(ff == 0) = nan;
 
 %% Gradient as median of MATDEF
 
@@ -21,19 +13,7 @@ for i = 1:7
     LBG(:,i) = GL;
 end
 
-%figure;
-%hold on;
-%contourf([Song.geotimes], latdef, LBG,[0 100:500:6500]);
-%caxis([0 7000]);
-%colormap('jet');
-%h = colorbar;
-%h.Label.String = 'Pseudospecies richness';
-%xlabel('Geological time');
-%ylabel('latitude');
-%title('LBG (mediane)')
-
 %% Plot
-ff(62:65, 1) = nan;
 
 figure;
 hold on
@@ -49,17 +29,16 @@ gl30.LineWidth = 1.5;
 gl30.Color = [0.8 0.8 0.8];
 
 %% Gradient Final
-ff(62:65, 1) = 0;
 
 figure;
 hold on;
-h = imagesc([Song.geotimes], latdef, ff);
-set(h, 'Alphadata', ~isnan(ff));
+h = imagesc([Song.geotimes], latdef, LBG);
+set(h, 'Alphadata', ~isnan(LBG));
 % h = pcolor([Song.geotimes], latdef, ff);
-[C, hh] = contour([Song.geotimes], latdef, ff);
+[C, hh] = contour([Song.geotimes], latdef, LBG);
 % [M, hh]
 % set(h, 'EdgeColor', 'none');
-caxis([0 7000]);
+caxis([0 5500]);
 colormap('parula');
 h = colorbar;
 h.LineWidth = 1;
